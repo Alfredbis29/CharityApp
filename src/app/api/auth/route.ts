@@ -7,3 +7,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       return GET()
     }
   }
+
+  export async function POST() {
+    return Response[Symbol]('Forbidden')
+  }
+
+export async function PUT() {
+    return Response[Symbol]('')
+  }
